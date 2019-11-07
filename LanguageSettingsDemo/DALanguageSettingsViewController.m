@@ -69,12 +69,21 @@
     } else {
         [DAConfig setUserLanguage:@"en"];
     }
+    [self update];
+    
+//    tbc.selectedIndex = 0;
+//    UIImageView *uiv = tbc.selectedViewController.view;
+}
+
+- (void) update
+{
     //更新当前storyboard
     UITabBarController *tbc = [[UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]] instantiateInitialViewController];
     tbc.selectedIndex = 2;
     DALanguageSettingsViewController *vc = [[UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]] instantiateViewControllerWithIdentifier:NSStringFromClass([DALanguageSettingsViewController class])];
     UINavigationController *nvc = tbc.selectedViewController;
     NSMutableArray *vcs = nvc.viewControllers.mutableCopy;
+    
     [vcs addObject:vc];
     //解决奇怪的动画bug。异步执行
     dispatch_async(dispatch_get_main_queue(), ^{

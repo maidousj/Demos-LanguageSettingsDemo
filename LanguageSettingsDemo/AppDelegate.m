@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "DAConfig.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +18,12 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    // 直接设定为英文
+    [DAConfig setUserLanguage:@"en"];
+    
+//    UITabBarController *tbc = [[UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]] instantiateInitialViewController];
+    
+    
     return YES;
 }
 

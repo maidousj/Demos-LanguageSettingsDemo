@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A847CE0523745B95007D6455 /* bg_en.png in Resources */ = {isa = PBXBuildFile; fileRef = A847CE0423745B95007D6455 /* bg_en.png */; };
+		A847CE0723745BB0007D6455 /* bg_zh.png in Resources */ = {isa = PBXBuildFile; fileRef = A847CE0623745BB0007D6455 /* bg_zh.png */; };
+		A869144A2374214A00E3027F /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A86914492374214A00E3027F /* FirstViewController.m */; };
 		F2F3C4071EBB2A2800E47DEB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F2F3C4061EBB2A2800E47DEB /* main.m */; };
 		F2F3C40A1EBB2A2800E47DEB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F2F3C4091EBB2A2800E47DEB /* AppDelegate.m */; };
 		F2F3C4101EBB2A2800E47DEB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2F3C40E1EBB2A2800E47DEB /* Main.storyboard */; };
@@ -40,6 +43,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A847CE0423745B95007D6455 /* bg_en.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bg_en.png; path = LanguageSettingsDemo/bg_en.png; sourceTree = SOURCE_ROOT; };
+		A847CE0623745BB0007D6455 /* bg_zh.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg_zh.png; sourceTree = "<group>"; };
+		A86914482374214A00E3027F /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
+		A86914492374214A00E3027F /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
 		F2F3C4021EBB2A2800E47DEB /* LanguageSettingsDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LanguageSettingsDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2F3C4061EBB2A2800E47DEB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F2F3C4081EBB2A2800E47DEB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -123,9 +130,13 @@
 				F2F3C4081EBB2A2800E47DEB /* AppDelegate.h */,
 				F2F3C4091EBB2A2800E47DEB /* AppDelegate.m */,
 				F2F3C4411EBB2BA700E47DEB /* DAConfig.h */,
+				A847CE0423745B95007D6455 /* bg_en.png */,
+				A847CE0623745BB0007D6455 /* bg_zh.png */,
 				F2F3C4421EBB2BA700E47DEB /* DAConfig.m */,
 				F2F3C4471EBB2C4100E47DEB /* NSBundle+DAUtils.h */,
 				F2F3C4481EBB2C4100E47DEB /* NSBundle+DAUtils.m */,
+				A86914482374214A00E3027F /* FirstViewController.h */,
+				A86914492374214A00E3027F /* FirstViewController.m */,
 				F2F3C45E1EBB310A00E47DEB /* DAViewController.h */,
 				F2F3C45F1EBB310A00E47DEB /* DAViewController.m */,
 				F2F3C43E1EBB2B6600E47DEB /* DALanguageSettingsViewController.h */,
@@ -238,11 +249,10 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0830;
-				ORGANIZATIONNAME = "暗の天使";
+				ORGANIZATIONNAME = "";
 				TargetAttributes = {
 					F2F3C4011EBB2A2800E47DEB = {
 						CreatedOnToolsVersion = 8.3.2;
-						DevelopmentTeam = GM8DN4C6AS;
 						ProvisioningStyle = Automatic;
 					};
 					F2F3C41A1EBB2A2800E47DEB = {
@@ -288,7 +298,9 @@
 				F2F3C4631EBB324200E47DEB /* Localizable.strings in Resources */,
 				F2F3C4151EBB2A2800E47DEB /* LaunchScreen.storyboard in Resources */,
 				F2F3C4121EBB2A2800E47DEB /* Assets.xcassets in Resources */,
+				A847CE0523745B95007D6455 /* bg_en.png in Resources */,
 				F2F3C45C1EBB2FDB00E47DEB /* StoryboardAutoGenStrings.py in Resources */,
+				A847CE0723745BB0007D6455 /* bg_zh.png in Resources */,
 				F2F3C4101EBB2A2800E47DEB /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -333,6 +345,7 @@
 			files = (
 				F2F3C4431EBB2BA700E47DEB /* DAConfig.m in Sources */,
 				F2F3C4601EBB310A00E47DEB /* DAViewController.m in Sources */,
+				A869144A2374214A00E3027F /* FirstViewController.m in Sources */,
 				F2F3C40A1EBB2A2800E47DEB /* AppDelegate.m in Sources */,
 				F2F3C4071EBB2A2800E47DEB /* main.m in Sources */,
 				F2F3C4491EBB2C4100E47DEB /* NSBundle+DAUtils.m in Sources */,
@@ -502,7 +515,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = GM8DN4C6AS;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = LanguageSettingsDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "-.LanguageSettingsDemo";
@@ -514,7 +527,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = GM8DN4C6AS;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = LanguageSettingsDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "-.LanguageSettingsDemo";
@@ -591,6 +604,7 @@
 				F2F3C4311EBB2A2800E47DEB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F2F3C4321EBB2A2800E47DEB /* Build configuration list for PBXNativeTarget "LanguageSettingsDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -599,6 +613,7 @@
 				F2F3C4341EBB2A2800E47DEB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F2F3C4351EBB2A2800E47DEB /* Build configuration list for PBXNativeTarget "LanguageSettingsDemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -607,6 +622,7 @@
 				F2F3C4371EBB2A2800E47DEB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
