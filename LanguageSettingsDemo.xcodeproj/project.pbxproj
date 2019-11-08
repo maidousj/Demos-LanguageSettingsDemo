@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		A847CE0523745B95007D6455 /* bg_en.png in Resources */ = {isa = PBXBuildFile; fileRef = A847CE0423745B95007D6455 /* bg_en.png */; };
 		A847CE0723745BB0007D6455 /* bg_zh.png in Resources */ = {isa = PBXBuildFile; fileRef = A847CE0623745BB0007D6455 /* bg_zh.png */; };
+		A847CE0B23750701007D6455 /* bg.png in Resources */ = {isa = PBXBuildFile; fileRef = A847CE0D23750701007D6455 /* bg.png */; };
 		A869144A2374214A00E3027F /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A86914492374214A00E3027F /* FirstViewController.m */; };
 		F2F3C4071EBB2A2800E47DEB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F2F3C4061EBB2A2800E47DEB /* main.m */; };
 		F2F3C40A1EBB2A2800E47DEB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F2F3C4091EBB2A2800E47DEB /* AppDelegate.m */; };
@@ -45,6 +46,9 @@
 /* Begin PBXFileReference section */
 		A847CE0423745B95007D6455 /* bg_en.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bg_en.png; path = LanguageSettingsDemo/bg_en.png; sourceTree = SOURCE_ROOT; };
 		A847CE0623745BB0007D6455 /* bg_zh.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg_zh.png; sourceTree = "<group>"; };
+		A847CE08237474A4007D6455 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		A847CE0C23750701007D6455 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "zh-Hans"; path = "zh-Hans.lproj/bg.png"; sourceTree = "<group>"; };
+		A847CE0E23750714007D6455 /* en */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = en; path = en.lproj/bg.png; sourceTree = "<group>"; };
 		A86914482374214A00E3027F /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
 		A86914492374214A00E3027F /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
 		F2F3C4021EBB2A2800E47DEB /* LanguageSettingsDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LanguageSettingsDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -129,10 +133,12 @@
 				F2F3C4531EBB2FDB00E47DEB /* Resources */,
 				F2F3C4081EBB2A2800E47DEB /* AppDelegate.h */,
 				F2F3C4091EBB2A2800E47DEB /* AppDelegate.m */,
-				F2F3C4411EBB2BA700E47DEB /* DAConfig.h */,
+				A847CE0D23750701007D6455 /* bg.png */,
 				A847CE0423745B95007D6455 /* bg_en.png */,
 				A847CE0623745BB0007D6455 /* bg_zh.png */,
+				F2F3C4411EBB2BA700E47DEB /* DAConfig.h */,
 				F2F3C4421EBB2BA700E47DEB /* DAConfig.m */,
+				A847CE08237474A4007D6455 /* PrefixHeader.pch */,
 				F2F3C4471EBB2C4100E47DEB /* NSBundle+DAUtils.h */,
 				F2F3C4481EBB2C4100E47DEB /* NSBundle+DAUtils.m */,
 				A86914482374214A00E3027F /* FirstViewController.h */,
@@ -253,6 +259,7 @@
 				TargetAttributes = {
 					F2F3C4011EBB2A2800E47DEB = {
 						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = CSPDBDZ5FD;
 						ProvisioningStyle = Automatic;
 					};
 					F2F3C41A1EBB2A2800E47DEB = {
@@ -297,6 +304,7 @@
 			files = (
 				F2F3C4631EBB324200E47DEB /* Localizable.strings in Resources */,
 				F2F3C4151EBB2A2800E47DEB /* LaunchScreen.storyboard in Resources */,
+				A847CE0B23750701007D6455 /* bg.png in Resources */,
 				F2F3C4121EBB2A2800E47DEB /* Assets.xcassets in Resources */,
 				A847CE0523745B95007D6455 /* bg_en.png in Resources */,
 				F2F3C45C1EBB2FDB00E47DEB /* StoryboardAutoGenStrings.py in Resources */,
@@ -385,6 +393,15 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		A847CE0D23750701007D6455 /* bg.png */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A847CE0C23750701007D6455 /* zh-Hans */,
+				A847CE0E23750714007D6455 /* en */,
+			);
+			name = bg.png;
+			sourceTree = "<group>";
+		};
 		F2F3C40E1EBB2A2800E47DEB /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -515,7 +532,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = CSPDBDZ5FD;
 				INFOPLIST_FILE = LanguageSettingsDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "-.LanguageSettingsDemo";
@@ -527,7 +544,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = CSPDBDZ5FD;
 				INFOPLIST_FILE = LanguageSettingsDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "-.LanguageSettingsDemo";

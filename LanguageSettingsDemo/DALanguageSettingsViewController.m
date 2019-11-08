@@ -89,7 +89,7 @@
     dispatch_async(dispatch_get_main_queue(), ^{
         [UIApplication sharedApplication].keyWindow.rootViewController = tbc;
         nvc.viewControllers = vcs;
-        NSLog(@"已切换到语言 %@", [NSBundle currentLanguage]);
+        NSLog(@"mypage已切换到语言 %@", [NSBundle currentLanguage]);
     });
 }
 

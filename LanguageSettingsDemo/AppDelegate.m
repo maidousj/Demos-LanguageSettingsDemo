@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "DAConfig.h"
+#import "PrefixHeader.pch"
 
 @interface AppDelegate ()
 
@@ -19,10 +20,15 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     // 直接设定为英文
+    [[NSUserDefaults standardUserDefaults] setObject:@"en" forKey:AppLanguage];
+//    [[NSUserDefaults standardUserDefaults] setValue:@"en" forKey:@"AppleLanguages"];
     [DAConfig setUserLanguage:@"en"];
     
 //    UITabBarController *tbc = [[UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]] instantiateInitialViewController];
-    
+//    
+//    dispatch_async(dispatch_get_main_queue(), ^{
+//        [UIApplication sharedApplication].keyWindow.rootViewController = tbc;
+//    });
     
     return YES;
 }

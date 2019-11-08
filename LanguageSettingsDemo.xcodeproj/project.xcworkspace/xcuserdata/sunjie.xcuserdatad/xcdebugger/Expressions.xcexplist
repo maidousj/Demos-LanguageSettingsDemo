@@ -24,6 +24,9 @@
             <PersistentString
                value = "NSLocalizedString(@&quot;imageName&quot;,nil)">
             </PersistentString>
+            <PersistentString
+               value = "PJLocalString(@&quot;imageName&quot;)">
+            </PersistentString>
          </PersistentStrings>
       </ContextState>
       <ContextState
